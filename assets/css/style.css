@@ -5,3 +5,25 @@
   --dark: #050505;
   --secondary-dark: #1a1a1a;
 }
+
+body {
+  background-color: var(--light-gray);
+}
+
+header {
+  background-color: var(--white);
+}
+
+.navbar {
+  background-color: var(--white);
+}
+
+.nav-link {
+  color: var(--dark) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #666 !important;
+}
