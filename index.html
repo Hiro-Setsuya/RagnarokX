@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RO Job Class</title>
+    <title>ROX Job Class</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -10,7 +10,7 @@
     />
 
     <!-- Favicons -->
-    <link rel="icon" href="assets/img/RO_logo.png" type="image/png" />
+    <link rel="icon" href="assets/img/ROX_logo.png" type="image/png" />
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -26,106 +26,20 @@
 
   <body class="pt-5">
     <header class="border-bottom border-secondary fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid justify-content-center">
           <a
-            class="navbar-brand fw-bold"
-            style="color: var(--dark); font-family: 'Orbitron', sans-serif"
+            class="navbar-brand fw-bold d-flex align-items-center"
             href="#home"
           >
             <img
-              src="assets/img/RO_logo.png"
-              alt=" Ragnarok Online Logo"
-              height="30"
-              class="d-inline-block align-text-top"
+              src="assets/img/ROX_logo.png"
+              alt=" Ragnarok Next Generation Logo"
+              height="40"
+              class="me-2"
             />
-            Ragnarok Online Job Class
+            <span>Ragnarok Next Generation Job Class</span>
           </a>
-
-          <!-- Regular navbar collapse for large screens -->
-          <div
-            class="collapse navbar-collapse d-lg-flex justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav gap-3">
-              <li class="nav-item">
-                <a class="nav-link" href="#allClass">
-                  <span>All Class</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#swordsman">
-                  <span> Swordsman</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#mage">
-                  <span> Mage</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Hamburger toggler for mobile -->
-          <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Offcanvas for mobile -->
-          <div
-            class="offcanvas offcanvas-end text-bg-dark d-lg-none"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-            data-bs-scroll="true"
-            style="--bs-offcanvas-width: 280px"
-          >
-            <div class="offcanvas-header">
-              <img
-                src="assets/img/redmagic_icon.png"
-                alt="Redmagic Icon"
-                width="30"
-                height="30"
-                class="d-inline-block align-text-top"
-              />
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Ragnarok Online Job Class
-              </h5>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-
-            <div class="offcanvas-body">
-              <ul class="navbar-nav gap-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="#allClass">
-                    <span> All Class</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#swordsman">
-                    <span> Swordsman</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#mage">
-                    <span> Mage</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </nav>
     </header>
@@ -172,7 +86,7 @@
       <div class="col-12 col-md-6 col-lg-4 mb-3">
         <div class="card shadow h-100">
           <img src="${classes[i].image}" class="card-img-top" alt="${classes[i].name}" />
-          <div class="card-body">
+          <div class="card-body text-center">
             <h5 class="card-title">${classes[i].name}</h5>
             <p class="card-text">${classes[i].description}</p>
             <a href="#" class="btn btn-primary">Learn More</a>
