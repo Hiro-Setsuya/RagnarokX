@@ -75,11 +75,12 @@
     <script src="assets/script/data.js"></script>
 
     <script>
+      // Generate cards dynamically
       let output = "";
 
       for (let i = 0; i < classes.length; i++) {
         output += `
-      <div class="col-12 col-lg-6 mb-3">
+      <div class="col-12 col-lg-6 mb-3 fade-in-up">
         <div class="card shadow-sm rounded h-100 transition">
           <img src="${classes[i].image}" class="card-img-top w-100" alt="${classes[i].name}" />
           <div class="line"></div>     
@@ -93,6 +94,22 @@
       }
 
       document.getElementById("cardContainer").innerHTML = output;
+
+      // Fade-in effect on scroll - after cards are added to DOM
+      const fadeElements = document.querySelectorAll(".fade-in-up");
+
+      const fadeObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+      );
+
+      fadeElements.forEach((el) => fadeObserver.observe(el));
     </script>
 
     <!-- Bootstrap JavaScript Libraries -->
