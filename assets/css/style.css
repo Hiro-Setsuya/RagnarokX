@@ -18,7 +18,7 @@ body {
   color: var(--deep-brown);
 }
 
-header {
+#header {
   background: linear-gradient(to bottom, var(--tan), var(--cream));
   box-shadow: 0 2px 8px var(--shadow);
 }

@@ -25,55 +25,59 @@
   </head>
 
   <body class="pt-5">
-    <header class="border-bottom border-secondary fixed-top">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid justify-content-center">
-          <a
-            class="navbar-brand fw-bold d-flex align-items-center"
-            href="#home"
-          >
-            <img
-              src="assets/img/ROX_logo.png"
-              alt=" Ragnarok Next Generation Logo"
-              height="40"
-              class="me-2"
-            />
-            <span>Ragnarok Next Generation Job Class</span>
-          </a>
+    <!-- Header Section -->
+    <div
+      class="container-fluid border-bottom border-secondary fixed-top"
+      id="header"
+    >
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid justify-content-center">
+              <a
+                class="navbar-brand fw-bold d-flex align-items-center"
+                href="#home"
+              >
+                <img
+                  src="assets/img/ROX_logo.png"
+                  alt=" Ragnarok Next Generation Logo"
+                  height="40"
+                  class="me-2"
+                />
+                <span>Ragnarok Next Generation Job Class</span>
+              </a>
+            </div>
+          </nav>
         </div>
-      </nav>
-    </header>
-    <main class="mt-3 p-5">
-      <div class="container">
-        <div class="row" id="cardContainer"></div>
       </div>
-    </main>
-    <footer>
-      <div
-        class="text-center"
-        style="background-color: var(--white); color: var(--dark)"
-      >
-        <p class="mb-0">
-          <img
-            src="assets/img/Javillo_logo.svg"
-            alt="AV_icon"
-            width="48px"
-          />&copy; 2025 Adrian Vincent Javillo. All rights reserved.
-        </p>
-      </div>
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Main Content Section -->
+    <div class="container mt-3 p-5">
+      <div class="row" id="cardContainer"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="text-center"
+              style="background-color: var(--white); color: var(--dark)"
+            >
+              <p class="mb-0">
+                <img
+                  src="assets/img/Javillo_logo.svg"
+                  alt="AV_icon"
+                  width="48px"
+                />&copy; 2025 Adrian Vincent Javillo. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Scripts -->
     <script src="assets/script/data.js"></script>
@@ -98,5 +102,18 @@
 
       document.getElementById("cardContainer").innerHTML = output;
     </script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
