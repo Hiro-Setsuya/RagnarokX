@@ -26,25 +26,24 @@
 
   <body class="pt-5">
     <!-- Header Section -->
-    <div
-      class="container-fluid border-bottom border-secondary fixed-top"
-      id="header"
-    >
+    <div class="container-fluid border-bottom fixed-top shadow-sm" id="header">
       <div class="row">
         <div class="col-12">
           <nav class="navbar navbar-expand-lg">
             <div class="container-fluid justify-content-center">
               <a
-                class="navbar-brand fw-bold d-flex align-items-center"
+                class="navbar-brand fw-bold d-flex align-items-center fs-5 flex-nowrap"
                 href="#home"
               >
                 <img
                   src="assets/img/ROX_logo.png"
                   alt=" Ragnarok Next Generation Logo"
                   height="40"
-                  class="me-2"
+                  class="me-2 flex-shrink-0"
                 />
-                <span>Ragnarok Next Generation Job Class</span>
+                <span class="d-inline-block"
+                  >Ragnarok Next Generation Job Class</span
+                >
               </a>
             </div>
           </nav>
@@ -53,25 +52,18 @@
     </div>
 
     <!-- Main Content Section -->
-    <div class="container mt-3 p-5">
+    <div class="container mt-3 py-5 px-3 px-md-5">
       <div class="row" id="cardContainer"></div>
     </div>
 
     <!-- Footer Section -->
     <div>
-      <div class="container">
+      <div class="container-fluid py-3 mt-5" id="footer">
         <div class="row">
           <div class="col-12">
-            <div
-              class="text-center"
-              style="background-color: var(--white); color: var(--dark)"
-            >
+            <div class="text-center">
               <p class="mb-0">
-                <img
-                  src="assets/img/Javillo_logo.svg"
-                  alt="AV_icon"
-                  width="48px"
-                />&copy; 2025 Adrian Vincent Javillo. All rights reserved.
+                &copy; Gravity Co., Ltd. & Lee Myoungjin. All rights reserved.
               </p>
             </div>
           </div>
@@ -88,12 +80,12 @@
       for (let i = 0; i < classes.length; i++) {
         output += `
       <div class="col-12 col-md-6 col-lg-4 mb-3">
-        <div class="card shadow h-100">
-          <img src="${classes[i].image}" class="card-img-top" alt="${classes[i].name}" />
-          <div class="card-body text-center">
-            <h5 class="card-title">${classes[i].name}</h5>
-            <p class="card-text">${classes[i].description}</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
+        <div class="card shadow-sm rounded h-100 transition">
+          <img src="${classes[i].image}" class="card-img-top w-100" alt="${classes[i].name}" />
+          <div class="card-body text-center p-3 p-md-4">
+            <h5 class="card-title fs-4 fw-semibold mb-3">${classes[i].name}</h5>
+            <p class="card-text mb-3">${classes[i].description}</p>
+            <a href="#" class="btn btn-primary fw-semibold">Learn More</a>
           </div>
         </div>
       </div>
