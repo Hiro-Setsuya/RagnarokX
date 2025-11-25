@@ -79,6 +79,16 @@ body {
   background: transparent;
 }
 
+.line {
+  height: 4px;
+  background-color: var(--accent);
+  margin: 0;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  box-shadow: var(--accent) 0px 2px 4px;
+}
+
 .card-title {
   font-family: "MedievalSharp", cursive;
   color: var(--deep-brown);
